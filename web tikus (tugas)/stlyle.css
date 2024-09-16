@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body {
+    background-image: url(dg.jpg);
+    background-size: 100%;
+}
+h1, h2 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "VT323", monospace;
+    margin: 10px;
+    color: red;
+}
+h2 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "VT323", monospace;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+button:hover {
+    background-color: firebrick;
+}
+
+button {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: black;
+    font-family: "VT323", monospace;
+    background-color: chartreuse;
+    border-radius: 10px;
+
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    cursor: url(sgopmsize1.png), auto;
+}
+.container:active {
+    cursor: url(sgopmsize1atas.png), auto;
+}
+.tanah {
+    width: 200px;
+    height: 200px;
+    position: relative; 
+    overflow: hidden; 
+    float: left; 
+}
+.tanah::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(kuburan.png) bottom center no-repeat;
+    background-size: 40%;
+    position: absolute;
+    bottom: -3px;
+}
+.pocong {
+    width: 100%;
+    height: 100%;
+    background: url(pocongj.png) bottom center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s;
+}
+.tanah.muncul .pocong {
+    top: 0px;
+}
